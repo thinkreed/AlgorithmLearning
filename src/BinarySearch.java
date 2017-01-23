@@ -1,5 +1,6 @@
 public class BinarySearch {
-  public int binarySearch(int a[], int n, int value) {
+
+  public int binarySearch(int[] a, int n, int value) {
     int left = 0;
     int right = n - 1;
     int middle = 0;
