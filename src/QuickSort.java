@@ -2,7 +2,7 @@ public class QuickSort {
 
   public void sort(int[] a) {
     if (a == null || a.length == 0) {
-      return ;
+      return;
     }
     quickSort(a, 0, a.length - 1);
   }
@@ -36,7 +36,7 @@ public class QuickSort {
 
   public static void main(String[] args) {
     QuickSort qs = new QuickSort();
-    int[] a = {6,1,27,9,3,4,5,10,8};
+    int[] a = { 6, 1, 27, 9, 3, 4, 5, 10, 8 };
     qs.sort(a);
     for (int i : a) {
       System.out.print(i);

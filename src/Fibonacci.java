@@ -1,6 +1,6 @@
 public class Fibonacci {
   public int fibonacci(int n) {
-    int[] dp = {1,1,0};
+    int[] dp = { 1, 1, 0 };
     if (n < 2) {
       return 1;
     }
