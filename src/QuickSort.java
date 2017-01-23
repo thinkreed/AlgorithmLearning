@@ -29,7 +29,7 @@ public class QuickSort {
     if (low < j) {
       quickSort(a, low, j);
     }
-    if (high > i) {
+    if (i < high) {
       quickSort(a, i, high);
     }
   }
