@@ -9,10 +9,7 @@ function bitmapSort(arr) {
       min = arr[i];
     }
   }
-  let tempArr = new Array();
-  for (let i = 0; i < max - min + 1; i++) {
-    tempArr[i] = 0;
-  }
+  let tempArr = new Int8Array(max - min + 1);
   for (let i = 0; i < arr.length; i++) {
     let index = arr[i] - min;
     tempArr[index] += 1;
