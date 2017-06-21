@@ -7,16 +7,19 @@ public class DutchNationalFlag {
     }
 
     public void dutchNationalFlag(int[] a, int n) {
+        //红色游标
         int left = 0;
+        //蓝色游标
         int right = n - 1;
+        //白色游标
         int cur = 1;
         while (cur <= right) {
-            if (a[cur] == 0) {
+            if (a[cur] == 0) { //红色
                 swap(a, left, cur);
                 left++;
-            } else if (a[cur] == 1) {
+            } else if (a[cur] == 1) { //白色
                 cur++;
-            } else {
+            } else { //蓝色
                 swap(a, cur, right);
                 right--;
             }
